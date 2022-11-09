@@ -1,4 +1,5 @@
 import Facebook from "./Facebook.png";
+import Instagram from "./Instagram.png";
 import { Link } from "react-router-dom";
 function Footer(props) {
     return (
@@ -12,7 +13,20 @@ function Footer(props) {
                     <img src={Facebook} className="newLogo" alt="logo" width="40" height="40" />
 
                     <span class="fs-4">
-                        <Link to={"/Home"}></Link>
+                        <Link to={"https://www.facebook.com/profile.php?id=100067980993920"}></Link>
+                    </span>
+                </a>
+                <ul class="nav col-md-0 justify-content-end">
+                    <Link to={"/Home"}></Link>
+                </ul>
+                <a
+                    href="/"
+                    class="d-flex align-items-center text-dark text-decoration-none"
+                >
+                    <img src={Instagram} className="newLogo" alt="logo" width="40" height="40" />
+
+                    <span class="fs-4">
+                        <Link to={"https://www.instagram.com/divangelalrescate/"}></Link>
                     </span>
                 </a>
                 <ul class="nav col-md-0 justify-content-end">
