@@ -26,7 +26,6 @@ function App() {
         <Route path="/Contacto" element={<Contacto />} />
         <Route path="/Dona" element={<Dona />} />
       </Routes>
-      <img src={logo} className="App-logo" alt="logo" />
       <Footer />
     </div >
   );

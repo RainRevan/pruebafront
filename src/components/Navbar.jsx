@@ -1,69 +1,80 @@
+import DivAngel from "./DivAngel.png";
 import { Link } from "react-router-dom";
 import LogButton from "./LogButton.jsx";
 function Navbar(props) {
     return (
-        <div className="mx-0 my-0">
-            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom bg-primary">
-                <a
-                    href="/"
-                    class="d-flex align-items-center text-dark text-decoration-none"
-                >
-                    <svg
-                        xmlns="/.logo"
-                        width="40"
-                        height="32"
-                        class="me-2"
-                        viewBox="0 0 118 94"
-                        role="img"
+        <header class="p-1 text-bg-primary">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a
+                        href="/"
+                        class="d-flex align-items-center text-dark text-decoration-none"
                     >
-                        <title>Hogar de paso DivAngel</title>
-                    </svg>
-                    <span class="fs-4">
-                        <Link to={"/"}>Home</Link>
-                    </span>
-                </a>
+                        <img src={DivAngel} className="newLogo" alt="logo" width="200" height="100" />
+                        <png
+                            xmlns="/.DivAngel"
+                            width="100"
+                            height="100"
+                            class="me-2"
+                            viewBox="0 0 180 180"
+                            role="img"
+                        >
+                            <title>Hogar de paso DivAngel</title>
+                        </png>
+                        <span class="fs-4">
+                            <Link to={"/Home"}></Link>
+                        </span>
+                    </a>
 
-                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                    <Link
-                        to={"/Nosotros"}
-                        className="me-3 py-2 text-dark text-decoration-none"
-                    >
-                        Nosotros
-                    </Link>
-                    <Link
-                        to={"/Adopta"}
-                        className="me-3 py-2 text-dark text-decoration-none"
-                    >
-                        Adopta
-                    </Link>
-                    <Link
-                        to={"/Dudas"}
-                        className="me-3 py-2 text-dark text-decoration-none"
-                    >
-                        Dudas
-                    </Link>
-                    <Link
-                        to={"/Tienda"}
-                        className="me-3 py-2 text-dark text-decoration-none"
-                    >
-                        Tienda
-                    </Link>
-                    <Link
-                        to={"/Contacto"}
-                        className="me-3 py-2 text-dark text-decoration-none"
-                    >
-                        Contacto
-                    </Link>
-                    <Link
-                        to={"/Dona"}
-                        className="me-3 py-2 text-dark text-decoration-none"
-                    >
-                        Dona
-                    </Link>
-                    <LogButton logged={props.logged} />
-                </nav>
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search"></input>
+                    </form>
+                    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                        <Link
+                            to={"/Nosotros"}
+                            className="me-3 py-2 text-dark text-decoration-none"
+                        >
+                            Nosotros
+                        </Link>
+                        <Link
+                            to={"/Adopta"}
+                            className="me-3 py-2 text-dark text-decoration-none"
+                        >
+                            Adopta
+                        </Link>
+                        <Link
+                            to={"/Dudas"}
+                            className="me-3 py-2 text-dark text-decoration-none"
+                        >
+                            Dudas
+                        </Link>
+                        <Link
+                            to={"/Tienda"}
+                            className="me-3 py-2 text-dark text-decoration-none"
+                        >
+                            Tienda
+                        </Link>
+                        <Link
+                            to={"/Contacto"}
+                            className="me-3 py-2 text-dark text-decoration-none"
+                        >
+                            Contacto
+                        </Link>
+                        <Link
+                            to={"/Dona"}
+                            className="me-3 py-2 text-dark text-decoration-none"
+                        >
+                            Dona
+                        </Link>
+                        <LogButton logged={props.logged} />
+                    </nav>
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-warning">Registrarme</button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
     );
 }
 export default Navbar;
