@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import LogButton from "./LogButton.jsx";
 function Navbar(props) {
     return (
-        <div className="mx-5 my-3">
-            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <div className="mx-0 my-0">
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom bg-primary">
                 <a
                     href="/"
                     class="d-flex align-items-center text-dark text-decoration-none"
                 >
                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns="/.logo"
                         width="40"
                         height="32"
                         class="me-2"
@@ -31,28 +31,34 @@ function Navbar(props) {
                         Nosotros
                     </Link>
                     <Link
-                        to={"/"}
+                        to={"/Adopta"}
                         className="me-3 py-2 text-dark text-decoration-none"
                     >
-                        Categorias
+                        Adopta
                     </Link>
                     <Link
-                        to={"/"}
+                        to={"/Dudas"}
                         className="me-3 py-2 text-dark text-decoration-none"
                     >
-                        Usuarios
+                        Dudas
                     </Link>
                     <Link
-                        to={"/"}
+                        to={"/Tienda"}
                         className="me-3 py-2 text-dark text-decoration-none"
                     >
-                        Nosotros
+                        Tienda
                     </Link>
                     <Link
-                        to={"/"}
+                        to={"/Contacto"}
                         className="me-3 py-2 text-dark text-decoration-none"
                     >
-                        Ejemplos
+                        Contacto
+                    </Link>
+                    <Link
+                        to={"/Dona"}
+                        className="me-3 py-2 text-dark text-decoration-none"
+                    >
+                        Dona
                     </Link>
                     <LogButton logged={props.logged} />
                 </nav>
