@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./Imagenes/logo.svg";
 
 function Home(props) {
     return (
