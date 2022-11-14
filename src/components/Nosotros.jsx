@@ -33,7 +33,6 @@ function Nosotros(props) {
                 <p class="lead" style={{ textAlign: "justify" }}>Queremos ser reconocidos a nivel mundial por el impacto generado no solo a todos aquellos animales que fueron rescatados, sino a toda la sociedad por generar conocimiento y consciencia acerca de la importancia de esterilizar, y de la responsabilidad de tener un perro y/o gato en nuestro hogar.</p><br></br>
             </div>
         </div>
-
     );
 }
 export default Nosotros;

@@ -27,7 +27,7 @@ function Navbar(props) {
                     </a>
 
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search"></input>
+                        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar...." aria-label="Buscar"></input>
                     </form>
                     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                         <Link
