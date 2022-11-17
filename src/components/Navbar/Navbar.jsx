@@ -1,4 +1,4 @@
-import DivAngel from "./Imagenes/DivAngel.png";
+import DivAngel from "./DivAngel.png";
 import { Link } from "react-router-dom";
 import LogButton from "./LogButton.jsx";
 function Navbar(props) {

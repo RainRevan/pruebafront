@@ -1,5 +1,5 @@
-import Facebook from "./Imagenes/Facebook.png";
-import Instagram from "./Imagenes/Instagram.png";
+import Facebook from "./Facebook.png";
+import Instagram from "./Instagram.png";
 import { Link } from "react-router-dom";
 function Footer(props) {
     return (
