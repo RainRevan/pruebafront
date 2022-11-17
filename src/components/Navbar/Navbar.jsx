@@ -67,6 +67,12 @@ function Navbar(props) {
                             Dona
                         </Link>
                         <LogButton logged={props.logged} />
+                        <Link
+                            to={"/usuarios"}
+                            className="me-3 py-2 text-dark text-decoration-none"
+                        >
+                            Usuarios
+                        </Link>
                     </nav>
 
                     <div class="text-end">
