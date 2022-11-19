@@ -74,7 +74,6 @@ function Navbar(props) {
                             Usuarios
                         </Link>
                     </nav>
-
                     <div class="text-end">
                         <button type="button" class="btn btn-warning">Registrarme</button>
                     </div>
