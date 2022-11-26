@@ -6,7 +6,7 @@
 // let FULL_API_PATH = PROTOCOL + "://" + HOST + ":" + PORT + API_ROUTE;
 
 let PORT = 80;
-let HOST = "pruebaback.vercel.app";
+let HOST = "backendproyecto-nigth.vercel.app";
 let PROTOCOL = "https";
 let API_ROUTE = "/api/";
 let FULL_PATH = PROTOCOL + "://" + HOST + ":" + PORT + "/";
@@ -16,7 +16,7 @@ if (PORT === 80) {
     FULL_PATH = PROTOCOL + "://" + HOST + "/";
     FULL_API_PATH = PROTOCOL + "://" + HOST + API_ROUTE;
 }
-//https://pruebaback.vercel.app/api/usuarios/all
+// https://backendproyecto-nigth.vercel.app/api/usuarios/all
 
 module.exports = {
     PORT,
