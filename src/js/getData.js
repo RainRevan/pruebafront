@@ -1,3 +1,5 @@
+import axios, { Axios } from "axios";
+
 let usuarios = [
     {
         id: 1,
@@ -1859,9 +1861,18 @@ let usuarios = [
             "Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.66 Safari/535.11",
     },
 ];
-
-function getData(url, headers, httpMethod, data) {
+function loadData() {
     return usuarios;
+}
+
+function getRequest(urlRequest, headers, httpMethod, dataBody) {
+    let promiseQuery = axios({
+        url: urlRequest,
+        headers: headers,
+        method: httpMethod,
+        data: dataBody,
+    });
+    return promiseQuery;
 }
 
 function getUsuario(id) {
@@ -1875,4 +1886,4 @@ function getUsuario(id) {
     return result;
 }
 
-export { getData, getUsuario };
+export { getRequest, getUsuario, loadData };
