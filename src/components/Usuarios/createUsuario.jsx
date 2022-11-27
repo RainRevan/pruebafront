@@ -114,7 +114,7 @@ function onClickSubmit(navigate) {
         email,
         password,
     };
-    let url = backendConfig.FULL_API_PATH + "usuarios/create";
+    let url = backendConfig.FULL_API_PATH + "Usuarios/create";
     let promesaCreate = getRequest(url, {}, "post", bodyData);
     //enviamos la peticion
     promesaCreate
@@ -122,7 +122,7 @@ function onClickSubmit(navigate) {
             if (res.status < 300) {
                 //redireccionar
                 console.log("Usuario creado");
-                navigate("/usuarios");
+                navigate("/Usuarios");
             }
             console.log(res);
         })

@@ -4,9 +4,11 @@ import { getRequest } from "../../js/getData";
 import MainPage from "../Table/MainPage";
 import CreateButton from "../Table/CreateBotton";
 import SearchBar from "../Table/SearchBar";
+
 let objCss = {
-    border: "6px solid red",
+    border: "6px solid violet",
 };
+
 function BodyIndex(props) {
     return (
         <div>
